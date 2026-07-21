@@ -5,7 +5,7 @@ import crypto from 'crypto'
 import { makeOrLoadRoom } from './rooms.js'
 
 const PORT = process.env.PORT || 5858
-const SESSION_SECRET = process.env.SESSION_SECRET || "lentejas"
+const SESSION_SECRET = "lentejas"
 
 function tokenValido(token) {
   if (!token) return false
