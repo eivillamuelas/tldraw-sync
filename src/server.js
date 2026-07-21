@@ -44,6 +44,7 @@ server.on('upgrade', (req, socket, head) => {
 
     try {
       const room = makeOrLoadRoom(roomId)
+      console.log('conexión', { roomId, logueado, token })
       room.handleSocketConnect({ sessionId, socket: ws, isReadonly: !logueado })
     } catch (e) {
       console.error(e)
