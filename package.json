@@ -1,14 +1,17 @@
 {
-  "name": "croma-sync",
+  "name": "tldraw-sync-server",
   "version": "1.0.0",
   "type": "module",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "node src/server.js"
   },
   "dependencies": {
-    "@tldraw/sync-core": "^4.0.4",
-    "@tldraw/tlschema": "^4.0.4",
-    "better-sqlite3": "^11.10.0",
+    "@tldraw/sync-core": "5.2.1",
+    "@tldraw/tlschema": "5.2.1",
+    "@tldraw/validate": "5.2.1",
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
     "ws": "^8.18.0"
   }
 }
